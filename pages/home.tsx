@@ -6,6 +6,7 @@ import Header from "./../components/Header";
 import HomeContainer from "./../components/Home";
 import AboutSection from "../components/AboutSection";
 import SkillsSection from "../components/SkillsSection";
+import QualificationSection from "../components/QualificationSection";
 
 export default function Home() {
   useEffect(() => {
@@ -34,6 +35,8 @@ export default function Home() {
         <AboutSection />
 
         <SkillsSection />
+
+        <QualificationSection />
       </main>
     </div>
   );

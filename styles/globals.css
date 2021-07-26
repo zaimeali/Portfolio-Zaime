@@ -173,6 +173,10 @@ img {
   cursor: pointer;
 }
 
+.pb-200 {
+  padding-bottom: 200px !important;
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -401,6 +405,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .button--small {
@@ -585,6 +590,7 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -626,6 +632,8 @@ img {
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  display: flex;
+  align-items: center;
 }
 
 .qualification__rounder {

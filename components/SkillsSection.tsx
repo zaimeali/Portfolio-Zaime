@@ -1,3 +1,5 @@
+import React from "react";
+
 import SkillData from "./SkillData";
 
 {/* prettier-ignore */}
@@ -7,7 +9,6 @@ import {
   UilServerNetwork,
   UilCog,
 } from "@iconscout/react-unicons";
-import React from "react";
 
 const SkillsSection = () => {
   const frontEnd = [

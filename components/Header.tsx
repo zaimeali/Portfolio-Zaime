@@ -64,7 +64,14 @@ export default function Header() {
             </li>
 
             <li className="nav__item">
-              <Link to="services" className="nav__link">
+              <Link
+                to="services"
+                className="nav__link"
+                smooth={true}
+                duration={100}
+                activeClass="active-link"
+                spy={true}
+              >
                 <UilBriefcaseAlt className="nav__icon" /> Services
               </Link>
             </li>
