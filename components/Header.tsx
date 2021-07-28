@@ -11,6 +11,7 @@ import {
   UilScenery,
   UilMessage,
   UilTimes,
+  UilMap,
 } from "@iconscout/react-unicons";
 
 export default function Header() {
@@ -60,6 +61,19 @@ export default function Header() {
                 spy={true}
               >
                 <UilFileAlt className="nav__icon" /> Skills
+              </Link>
+            </li>
+
+            <li className="nav__item">
+              <Link
+                to="journey"
+                className="nav__link"
+                smooth={true}
+                duration={100}
+                activeClass="active-link"
+                spy={true}
+              >
+                <UilMap className="nav__icon" /> Journey
               </Link>
             </li>
 
