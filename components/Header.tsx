@@ -16,7 +16,7 @@ import {
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <nav className="nav container">
         <Link to="home" className="nav__logo">
           Abdul Rafey <UilBracketsCurly className="nav__logo-icon" />
@@ -91,7 +91,14 @@ export default function Header() {
             </li>
 
             <li className="nav__item">
-              <Link to="portfolio" className="nav__link">
+              <Link
+                to="portfolio"
+                className="nav__link"
+                smooth={true}
+                duration={100}
+                activeClass="active-link"
+                spy={true}
+              >
                 <UilScenery className="nav__icon" /> Portfolio
               </Link>
             </li>

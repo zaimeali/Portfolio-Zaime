@@ -209,6 +209,7 @@ img {
 
 .nav__logo {
   display: flex;
+  cursor: pointer;
 }
 
 .nav__logo-icon {
@@ -768,6 +769,23 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
+  padding-bottom: 20px !important;
+}
+
+.portfolio__card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__info {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio__content {
@@ -783,10 +801,15 @@ img {
 .portfolio__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
+  text-align: center;
 }
 
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio__button:hover .button__icon {
@@ -798,7 +821,7 @@ img {
   content: "";
 }
 
-.swiper-portfolio-icon {
+/* .swiper-portfolio-icon {
   font-size: 2rem;
   color: var(--first-color);
 }
@@ -809,23 +832,24 @@ img {
 
 .swiper-button-next {
   right: -0.5rem;
-}
+} */
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
+  /* bottom: -2.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  bottom: -6px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--first-color);
+  background-color: var(--first-color) !important;
 }
 
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev .swiper-pagination-bullet {
   outline: none;
-}
+} */
 
 /*==================== PROJECT IN MIND ====================*/
 .project {
@@ -999,10 +1023,12 @@ img {
 
 /*========== SCROLL UP ==========*/
 .scrollup {
+  cursor: pointer;
+  border: 2px solid var(--first-color-alt);
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   opacity: 0.8;
   padding: 0 0.3rem;
   border-radius: 0.4rem;
@@ -1011,7 +1037,7 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-second);
 }
 
 .scrollup__icon {

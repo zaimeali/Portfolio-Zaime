@@ -8,11 +8,45 @@ import AboutSection from "../components/AboutSection";
 import SkillsSection from "../components/SkillsSection";
 import QualificationSection from "../components/QualificationSection";
 import ServicesSection from "../components/ServicesSection";
+import PortfolioSection from "../components/PortfolioSection";
+import ProjectInMindSection from "../components/ProjectInMindSection";
+import ScrollTop from "../components/ScrollTop";
+import Footer from "../components/Footer";
 
 export default function Home() {
+  function scrollHeader() {
+    const nav = document.getElementById("header");
+
+    // when scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    if (window?.scrollY >= 80) {
+      nav?.classList.add("scroll-header");
+    } else {
+      nav?.classList.remove("scroll-header");
+    }
+  }
+
+  function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+
+    // When the scroll is higher than 560 viewport height, add the scroll class to the tag with the scroll
+    if (window.scrollY >= 560) {
+      scrollUp?.classList.add("show-scroll");
+    } else {
+      scrollUp?.classList.remove("show-scroll");
+    }
+  }
+
   useEffect(() => {
     const homeBtn = document.getElementById("home-button");
     homeBtn?.click();
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollUp);
   }, []);
 
   return (
@@ -40,7 +74,16 @@ export default function Home() {
         <QualificationSection />
 
         <ServicesSection />
+
+        <PortfolioSection />
+
+        <ProjectInMindSection />
       </main>
+
+      <Footer />
+
+      {/* Scroll to Top */}
+      <ScrollTop />
     </div>
   );
 }
