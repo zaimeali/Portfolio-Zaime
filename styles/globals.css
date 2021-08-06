@@ -1010,8 +1010,12 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  /* color: var(--text-color-light); */
+  color: white;
   margin-top: var(--mb-3);
+  /* background-color: var(--first-color-alt); */
+  border-top: 5px solid var(--first-color-alt);
+  padding: 20px 0 0;
 }
 
 .footer__title,
