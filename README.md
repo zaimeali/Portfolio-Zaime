@@ -19,3 +19,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Remainder
 
 1. Icon Size Better
+2. Images Change
+3. Refactoring
+4. Responsive
+5. API Integration
+6. Host
+
+## Done
+
+1. Dark Theme
+2. Mobile Nav Menu

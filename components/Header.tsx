@@ -15,6 +15,13 @@ import {
 } from "@iconscout/react-unicons";
 
 export default function Header() {
+  const displayMenu = () => {
+    if (typeof window !== "undefined") {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu?.classList.remove("show-menu");
+    }
+  };
+
   return (
     <header className="header" id="header">
       <nav className="nav container">
@@ -22,7 +29,7 @@ export default function Header() {
           Abdul Rafey <UilBracketsCurly className="nav__logo-icon" />
         </Link>
 
-        <div className="nav__menu">
+        <div className="nav__menu" id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
               <Link
@@ -117,7 +124,7 @@ export default function Header() {
             </li>
           </ul>
 
-          <UilTimes className="nav__close" />
+          <UilTimes className="nav__close" onClick={displayMenu} />
         </div>
 
         <ChangeTheme />
