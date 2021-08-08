@@ -1,10 +1,11 @@
 import { UilArrowRight } from "@iconscout/react-unicons";
 
 // import Swiper core and required modules
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination} from "swiper";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import PortfolioSlide from "./PortfolioSlide";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
@@ -18,7 +19,10 @@ const PortfolioSection = () => {
       <Swiper
         className="portfolio__container container"
         slidesPerView={1}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, dynamicBullets: true }}
+        spaceBetween={48}
+        loop={true}
+        grabCursor={true}
       >
         <SwiperSlide className="portfolio__card">
           <img
@@ -46,7 +50,7 @@ const PortfolioSection = () => {
         <SwiperSlide className="portfolio__card">
           <img
             className="portfolio__img"
-            src="/img/portfolio3.jpg"
+            src="/img/portfolio1.jpg"
             alt="Project 1"
           />
 
@@ -69,7 +73,7 @@ const PortfolioSection = () => {
         <SwiperSlide className="portfolio__card">
           <img
             className="portfolio__img"
-            src="/img/portfolio2.jpg"
+            src="/img/portfolio1.jpg"
             alt="Project 1"
           />
 

@@ -104,7 +104,14 @@ export default function Header() {
             </li>
 
             <li className="nav__item">
-              <Link to="contact" className="nav__link">
+              <Link
+                to="contact"
+                className="nav__link"
+                smooth={true}
+                duration={100}
+                activeClass="active-link"
+                spy={true}
+              >
                 <UilMessage className="nav__icon" /> Contact Me
               </Link>
             </li>

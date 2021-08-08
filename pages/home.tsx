@@ -12,6 +12,8 @@ import PortfolioSection from "../components/PortfolioSection";
 import ProjectInMindSection from "../components/ProjectInMindSection";
 import ScrollTop from "../components/ScrollTop";
 import Footer from "../components/Footer";
+import TestimonialSection from "../components/TestimonialSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   function scrollHeader() {
@@ -78,6 +80,10 @@ export default function Home() {
         <PortfolioSection />
 
         <ProjectInMindSection />
+
+        <TestimonialSection />
+
+        <ContactSection />
       </main>
 
       <Footer />
