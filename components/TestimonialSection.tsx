@@ -34,12 +34,12 @@ const TestimonialSection = () => {
               </div>
             </div>
 
-            <div>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
+            <div className="testimonial__star__icons">
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
             </div>
           </div>
 
@@ -64,12 +64,12 @@ const TestimonialSection = () => {
               </div>
             </div>
 
-            <div>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
+            <div className="testimonial__star__icons">
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
             </div>
           </div>
 
@@ -95,12 +95,12 @@ const TestimonialSection = () => {
               </div>
             </div>
 
-            <div>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
-              <UilStar className="testimonial__icon-star"></UilStar>
+            <div className="testimonial__star__icons">
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
+              <UilStar className="testimonial__icon-star" />
             </div>
           </div>
 

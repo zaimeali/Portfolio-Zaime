@@ -5,6 +5,8 @@ import {
   UilEnvelopeAlt,
 } from "@iconscout/react-unicons";
 
+import { Link } from "react-scroll";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -17,19 +19,34 @@ const Footer = () => {
 
           <ul className="footer__links">
             <li>
-              <a href="#services" className="footer__link">
+              <Link
+                to="services"
+                className="footer__link"
+                smooth={true}
+                duration={100}
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" className="footer__link">
+              <Link
+                to="portfolio"
+                className="footer__link"
+                smooth={true}
+                duration={100}
+              >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="footer__link">
+              <Link
+                to="contact"
+                className="footer__link"
+                smooth={true}
+                duration={100}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

@@ -1,5 +1,7 @@
 import { UilMessage } from "@iconscout/react-unicons";
 
+import { Link } from "react-scroll";
+
 const ProjectInMindSection = () => {
   return (
     <section className="project section">
@@ -12,10 +14,15 @@ const ProjectInMindSection = () => {
               Contact me now and get 30% discount on the project
             </p>
 
-            <a href="#contact" className="button button--flex button--white">
+            <Link
+              to="contact"
+              className="button button--flex button--white"
+              smooth={true}
+              duration={100}
+            >
               Contact me
               <UilMessage className="project__icon button__icon" />
-            </a>
+            </Link>
           </div>
 
           <img

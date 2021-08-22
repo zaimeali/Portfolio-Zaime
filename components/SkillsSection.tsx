@@ -45,10 +45,21 @@ const SkillsSection = () => {
     }
   };
 
-  const isOpen = () => {
+  const isOpen = (id: string) => {
     const check = document.getElementsByClassName("skills__open")[0];
-    check.classList.remove("skills__open");
-    check.classList.add("skills__close");
+    if (check) {
+      if (check.id !== id) {
+        check.classList.remove("skills__open");
+        check.classList.add("skills__close");
+      }
+      displaySkill(id);
+    } else {
+      if (document.getElementById(id)?.classList.contains("skills__close")) {
+        document.getElementById(id)?.classList.remove("skills__close");
+      } else {
+        document.getElementById(id)?.classList.add("skills__open");
+      }
+    }
   };
 
   const clickSkill = (e: React.MouseEvent<HTMLElement>) => {
@@ -57,9 +68,7 @@ const SkillsSection = () => {
     const parent = element.parentElement as Element;
     const id = parent.id;
 
-    isOpen();
-
-    displaySkill(id);
+    isOpen(id);
   };
 
   return (

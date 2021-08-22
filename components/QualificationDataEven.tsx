@@ -23,7 +23,7 @@ const QualificationDataEven = ({
         <span className="qualification__subtitle">{subtitle}</span>
 
         <div className="qualification__calendar">
-          <UilCalendarAlt />
+          <UilCalendarAlt className="qualification__calendar__icon" />
           {dateStart} - {dateEnd}
         </div>
       </div>

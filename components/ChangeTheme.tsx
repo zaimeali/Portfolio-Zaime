@@ -28,7 +28,7 @@ const ChangeTheme = () => {
       )}
 
       <div className="nav__toggle" onClick={displayMenu}>
-        <UilApps />
+        <UilApps className="nav__icon__mobile" />
       </div>
     </div>
   );

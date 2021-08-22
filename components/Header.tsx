@@ -40,6 +40,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilHome className="nav__icon" /> Home
               </Link>
@@ -53,6 +54,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilUser className="nav__icon" /> About Me
               </Link>
@@ -66,6 +68,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilFileAlt className="nav__icon" /> Skills
               </Link>
@@ -79,6 +82,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilMap className="nav__icon" /> Journey
               </Link>
@@ -92,6 +96,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilBriefcaseAlt className="nav__icon" /> Services
               </Link>
@@ -105,6 +110,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilScenery className="nav__icon" /> Portfolio
               </Link>
@@ -118,6 +124,7 @@ export default function Header() {
                 duration={100}
                 activeClass="active-link"
                 spy={true}
+                onClick={displayMenu}
               >
                 <UilMessage className="nav__icon" /> Contact Me
               </Link>

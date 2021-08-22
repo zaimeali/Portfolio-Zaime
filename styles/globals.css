@@ -94,6 +94,7 @@ body.dark-theme {
   width: 20px;
   color: var(--title-color);
   margin-right: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
   cursor: pointer;
 }
 
@@ -189,6 +190,20 @@ img {
   gap: 1.5rem;
 }
 
+.flex__row {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.w__30 {
+  width: 30%;
+}
+
+.w__70 {
+  width: 70%;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -205,6 +220,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__icon__mobile {
+  width: 18px;
+  height: 18px;
 }
 
 .nav__logo {
@@ -399,6 +419,8 @@ img {
 }
 
 .button__icon {
+  width: 1.25rem;
+  height: 1.25rem;
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
@@ -493,6 +515,8 @@ img {
 }
 
 .skills__icon {
+  width: 32px;
+  height: 32px;
   margin-right: var(--mb-0-75);
 }
 
@@ -603,13 +627,24 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .qualification__button:hover {
   color: var(--first-color);
 }
 
+.qualification__calendar__icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
 .qualification__icon {
+  width: 1.8rem;
+  height: 1.8rem;
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
@@ -688,6 +723,8 @@ img {
 .services__icon {
   display: block;
   font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
@@ -839,7 +876,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; */
-  bottom: -6px !important;
+  bottom: 6px !important;
+  padding: 0px;
 }
 
 .swiper-pagination-bullet-active {
@@ -883,6 +921,12 @@ img {
   display: flex;
 }
 
+.testimonial_content {
+  /* margin-right: 48px; */
+  padding-right: 48px;
+  /* margin-left: 48px; */
+}
+
 .testimonial__data {
   justify-content: space-between;
   margin-bottom: var(--mb-1);
@@ -911,6 +955,8 @@ img {
 
 .testimonial__icon-star {
   color: var(--first-color);
+  width: 16px;
+  height: 16px;
 }
 
 .swiper-container .swiper-pagination-testimonial {
@@ -928,6 +974,8 @@ img {
 }
 
 .contact__icon {
+  width: 2rem;
+  height: 2rem;
   font-size: 2rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
@@ -992,6 +1040,10 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+}
+
+.footer__link {
+  cursor: pointer;
 }
 
 .footer__link:hover {
@@ -1086,7 +1138,16 @@ img {
   }
 
   .home__content {
-    grid-template-columns: 0.25fr 3fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .home__social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .home__img {
+    order: 0 !important;
   }
   .home__blob {
     width: 180px;
@@ -1133,28 +1194,55 @@ img {
 /* For medium devices */
 @media screen and (max-width: 568px) {
   .home__content {
-    grid-template-columns: max-content 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .home__social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .home__img {
+    order: 0 !important;
   }
   .home__data {
     grid-column: initial;
   }
-  .home__img {
-    order: 1;
-    justify-self: center;
-  }
 
-  .about__container,
-  .skills__container,
   .portfolio__content,
   .project__container,
-  .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .qualification__sections {
     display: grid;
-    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+
+  .flex__row {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .w__30,
+  .w__70 {
+    width: 100% !important;
+  }
+
+  .contact__information__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .testimonial {
+    padding: 2rem 15px 4rem !important;
+  }
+
+  .testimonial__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -1339,7 +1427,7 @@ img {
     right: -3.5rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -4.5rem;
+    bottom: 6px;
   }
 
   .contact__form {
